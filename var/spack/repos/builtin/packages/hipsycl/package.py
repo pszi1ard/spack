@@ -27,6 +27,12 @@ class Hipsycl(CMakePackage, ROCmPackage):
 
     version("stable", branch="stable", submodules=True)
     version(
+        "24.02.0",
+        commit="974adc33ea5a35dd8b5be68c7a744b37482b8b64",
+        submodules=True,
+        get_full_repo=True,
+    )
+    version(
         "23.10.0",
         commit="3952b468c9da89edad9dff953cdcab0a3c3bf78c",
         submodules=True,
